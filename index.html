@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>IVS Web Broadcast Stages Examples</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" />
+        <!-- CSS Reset -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+        <!-- Milligram CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+        <!-- IVS Web Broadcast import -->
+        <script type="text/javascript" src="https://web-broadcast.live-video.net/1.3.2/amazon-ivs-web-broadcast.js"></script>
+        <style>
+            html,
+            body {
+                width: 100%;
+                height: 100vh;
+                max-height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+            #root {
+                height: 100%;
+                display: contents;
+            }
+            video {
+                margin-bottom: 1rem;
+                background: black;
+                max-width: 100%;
+                max-height: 200px;
+            }
+            .participantContainer {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .content {
+                flex: 1 0 auto;
+            }
+            .placeholder {
+                background-color: #333333;
+                display: flex;
+                text-align: center;
+                margin-bottom: 1rem;
+                width: 350px;
+                height: 200px;
+            }
+            .placeholder span {
+                color: #ffffff;
+                font-size: 4rem;
+            }
+            #preview {
+                margin-bottom: 1.5rem;
+                background: green;
+                width: 100%;
+                height: 300;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="module" src="./index.processed.js"></script>
+    </body>
+</html>
